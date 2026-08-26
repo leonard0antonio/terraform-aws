@@ -4,7 +4,8 @@ Este repositório contém o código desenvolvido como atividade de infraestrutur
 
 ## 🚀 O que foi provisionado
 - Uma instância EC2 (`t2.micro` - Free tier).
-- Configuração de Providers e Variáveis para organização do código.
+- Configuração de Providers e Variáveis para organização do código (`variables.tf`).
+- Extração de dados da infraestrutura (`outputs.tf`) para exibir automaticamente o IP público e o ID da máquina gerada.
 
 ## 🔐 Processo de Conexão com a Cloud (AWS)
 
@@ -22,5 +23,6 @@ Para que o Terraform consiga se comunicar e criar recursos na AWS, a autenticaç
 
 * **Infraestrutura como Código (IaC):** Entendi o conceito de transformar cliques em painéis em código versionável, escalável e automatizado.
 * **Separação de Responsabilidades:** A importância de usar o arquivo `variables.tf` para deixar o arquivo principal (`main.tf`) mais limpo e reutilizável.
+* **Saídas Dinâmicas:** A utilidade do arquivo `outputs.tf` para retornar informações vitais (como o IP do servidor) no terminal assim que a infraestrutura termina de ser criada, evitando a necessidade de procurar no painel da AWS.
 * **Segurança de Estado (.gitignore):** Aprendi que o arquivo `terraform.tfstate` guarda o mapeamento real da infraestrutura e dados sensíveis, por isso a criação de um `.gitignore` rigoroso é o passo mais importante antes do primeiro commit.
 * **Ciclo de Vida do Terraform:** A lógica do fluxo `init` (baixar plugins), `plan` (prever mudanças) e `apply` (executar criação).
