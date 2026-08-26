@@ -1,0 +1,20 @@
+# Arquivos e diretórios locais do Terraform
+.terraform/
+.terraform.*
+
+# Arquivos de estado (NUNCA DEVEM IR PARA O GITHUB)
+*.tfstate
+*.tfstate.*
+
+# Arquivos de log de crash
+crash.log
+
+# Arquivos de variáveis que podem conter chaves de acesso
+*.tfvars
+*.tfvars.json
+
+# Arquivos de override
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
