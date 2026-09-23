@@ -1,5 +1,7 @@
 # ☁️ Provisionamento de Infraestrutura AWS com Terraform
 
+![Demo da aplicação](demo.jpg)
+
 Este repositório contém o código desenvolvido como atividade de infraestrutura como código (IaC), utilizando o Terraform para provisionar recursos na Amazon Web Services (AWS).
 
 ## 🚀 O que foi provisionado
